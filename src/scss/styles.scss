@@ -1,18 +1,22 @@
 @import './header.scss';
-@import './vite-promo.scss';
+@import './hero.scss';
+@import './jam-began.scss';
+@import './gameplay.scss';
+@import './mechanics.scss';
+@import './gallery.scss';
+@import './reviews.scss';
+@import './faq.scss';
+@import './footer.scss';
+@import 'cookies-modal.scss';
+@import './cookies.scss';
+@import './terms.scss';
+@import './privacy.scss';
+
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --radial-gold-gradient: radial-gradient(
+    90.66% 68.42% at 50% 50%,
+    rgb(255, 229, 69) 15.86%,
+    rgb(232, 169, 64) 100%
+  );
 }
