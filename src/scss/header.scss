@@ -1,0 +1,98 @@
+.header-section {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+}
+
+.header-content-wrap {
+  height: 60px;
+  position: relative;
+  background: rgba(249, 212, 65, 0.734);
+  backdrop-filter: blur(5px);
+  @include media(desktop) {
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.header-list-hidden {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+    gap: 42px;
+  }
+}
+
+.header-list-item.active {
+  border-radius: 12px;
+  background: #ea4faa;
+  color: #130000;
+}
+
+.close-menu-btn {
+  display: none;
+}
+
+.open-menu-btn,
+.close-menu-btn {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 375px;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 999;
+  background: #fbda46;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.backdrop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.backdrop-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-left: 40px;
+  margin-top: 93px;
+}
+
+.backdrop-list-item,
+.header-list-item {
+  padding: 8px 10px;
+  align-self: flex-start;
+}
+
+.backdrop-list-item.active {
+  border-radius: 12px;
+  background: #ea4faa;
+  color: #130000;
+}
+
+.backdrop-list-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.44444;
+  color: #000;
+}
+
+
