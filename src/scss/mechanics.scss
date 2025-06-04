@@ -1,0 +1,84 @@
+.mechanics-content-wrap {
+  background-image: url('../img/mobile/mechanics-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  padding-bottom: 52px;
+  display: flex;
+  flex-direction: column;
+  @include media(desktop) {
+    background-image: url('../img/desktop/mechanics-desktop-bg.png');
+    padding-top: 100px;
+    padding-bottom: 128px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.mechanics-title {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #130000;
+}
+
+.mechanics-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.44444;
+  color: #130000;
+  margin-top: 36px;
+}
+
+.mechanics-list-wrapper {
+  margin-top: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  @include media(desktop) {
+    margin-top: 50px;
+  }
+}
+
+.mechanics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  @include media(desktop) {
+    flex-direction: row;
+  }
+}
+
+.mechanics-list-2 {
+  margin-top: 22px;
+  @include media(desktop) {
+    margin: 0;
+  }
+}
+
+.mechanics-list-item {
+  border: 1px solid #fff;
+  border-radius: 12px;
+  padding: 16px 22px;
+  background: linear-gradient(90deg, #ffd500 0%, #ff9000 100%);
+
+  @include media(desktop) {
+    width: 100%;
+  }
+}
+
+.mechanics-list-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.18182;
+  text-align: center;
+  color: #130000;
+}
+
+.mechanics-list-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.44444;
+  color: #130000;
+  text-align: center;
+  margin-top: 10px;
+}
