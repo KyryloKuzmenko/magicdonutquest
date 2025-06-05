@@ -28,7 +28,17 @@
   }
 }
 
-.gameplay-swiper-list-item {
+.gameplay-swiper-wrap {
+  position: relative;
+  left: -18px;
+  width: calc(100% + 36px);
+  overflow: hidden;
+}
+
+.gameplay-swiper-wrap .gameplay-swiper-list-item {
+  width: 203px;
+  height: 315px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -55,6 +65,7 @@
   line-height: 1.44444;
   text-align: center;
   color: #130000;
+  width: 130px;
 }
 
 .gameplay-bottom-text {

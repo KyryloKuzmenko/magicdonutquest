@@ -1,0 +1,28 @@
+.gallery-content-wrap {
+  background-image: url('../img/mobile/gallery-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @include media(desktop) {
+    background-image: url('../img/desktop/gallery-desktop-bg.png');
+    padding-top: 100px;
+    padding-bottom: 27px;
+
+  }
+}
+
+.gallery-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+.gallery-content-wrap .gallery-swiper-slide {
+  @include media(desktop) {
+    width: auto;
+    flex: 0 1 auto;
+  }
+}
