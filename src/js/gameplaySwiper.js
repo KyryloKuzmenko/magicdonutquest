@@ -12,6 +12,7 @@ function initGameplaySwiper() {
       loop: true,
       spaceBetween: 20,
       slidesPerView: 'auto',
+      mousewheel: true,
       centeredSlides: true,
       initialSlide: 2,
     });

@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
       1440: {
         initialSlide: 1,
         spaceBetween: 40,
-        slidesPerView: 2.7,
+        slidesPerView: 3,
         freeMode: true,
       },
     },

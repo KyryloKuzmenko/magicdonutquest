@@ -10,6 +10,7 @@ function initGallerySwiper() {
   if (isMobile && !gallerySwiper) {
     gallerySwiper = new Swiper('.gallery-swiper', {
       loop: true,
+      mousewheel: true,
       spaceBetween: 20,
       slidesPerView: 'auto',
     });
